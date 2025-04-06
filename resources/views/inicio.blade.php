@@ -55,8 +55,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <img src="{{ asset('img/logos/AndyTec (1).png') }}" alt="Logo AndyTec" width="100">
-
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('img/logos/AndyTec Logo 3.png') }}" alt="Logo AndyTec" width="100">
+            </a>            
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
