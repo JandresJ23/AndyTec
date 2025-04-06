@@ -8,8 +8,11 @@ Route::get('/', function () {
     return view('inicio');
 })->name('inicio');
 
-Route::get('/Productos', [ProductController::class, 'index']);
-Route::get('/Productos/create', [ProductController::class, 'create']);
-Route::post('/productos', [ProductController::class, 'store'])->name('productos.store');
-Route::get('/Productos/{name}',[ProductController::class, 'show']);
+Route::prefix('/Productos')->controller(ProductController::class)->group(function(){
+    Route::get('/','index');
+    Route::get('/create','create');
+    Route::post('/', 'store')->name('productos.store');
+    Route::get('/{name}','show');
+});
+
 
