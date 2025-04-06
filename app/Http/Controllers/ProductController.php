@@ -15,6 +15,7 @@ class ProductController extends Controller
     }
 
     public function show($name){
-        echo "Producto: $name";
+        //echo "Producto: $name";
+        return view('Productos.show');//retorna el detalle de un producto
     }
 }
