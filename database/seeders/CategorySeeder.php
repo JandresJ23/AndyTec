@@ -21,7 +21,7 @@ class CategorySeeder extends Seeder
         $categoria_perifericos = new Category();
         $categoria_perifericos->name = "perifericos";
         $categoria_perifericos->description = "consigue increibles perifericos y hazlos parte de tu Setup";
-        $categoria_pcs->save(); 
+        $categoria_perifericos->save(); 
     
     }
 }

@@ -9,21 +9,18 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    // create_category_table.php
+
+    public function up()
     {
-        Schema::create('cart_item', function (Blueprint $table) {
-            $table->id();
-
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->in('users');
-
-            $table->unsignedBigInteger('Product_id');
-            $table->foreign('product_id')->references('id')->on('users');
-
-            $table->integer('quantity');
+        Schema::create('category', function (Blueprint $table) {
+            $table->id(); // => crea un unsignedBigInteger('id') automáticamente
+            $table->string('name');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
