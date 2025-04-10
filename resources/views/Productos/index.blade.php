@@ -100,7 +100,7 @@
             </div>
         </div>
     </section>
-
+    {{$listProducts->links()}}
     <footer class="text-center py-4">
         <p>&copy; 2025 Andytec Gaming Store - Todos los derechos reservados</p>
     </footer>
