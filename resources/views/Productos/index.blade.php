@@ -85,19 +85,7 @@
         <div class="container">
             <h2 class="text-center mb-4">Nuestros Productos</h2>
             <div class="row g-4">
-
-                @php
-                    $productos = [
-                        ['nombre' => 'PC Gamer Ultra', 'categoria' => 'Electrónica', 'precio' => '5.500.000', 'imagen' => 'pc_gamer.jpg'],
-                        ['nombre' => 'Teclado Mecánico RGB', 'categoria' => 'Periféricos', 'precio' => '320.000', 'imagen' => 'teclado_rgb.jpg'],
-                        ['nombre' => 'Audífonos 7.1', 'categoria' => 'Audio', 'precio' => '250.000', 'imagen' => 'audifonos.jpg'],
-                        ['nombre' => 'Mouse Gaming', 'categoria' => 'Periféricos', 'precio' => '120.000', 'imagen' => 'mouse.jpg'],
-                        ['nombre' => 'Silla Gamer PRO', 'categoria' => 'Mobiliario', 'precio' => '890.000', 'imagen' => 'silla.jpg'],
-                        ['nombre' => 'Micrófono Streaming', 'categoria' => 'Audio', 'precio' => '180.000', 'imagen' => 'microfono.jpg'],
-                    ];
-                @endphp
-
-                @foreach ($productos as $producto)
+                @foreach ($listProducts as $producto)
                     <div class="col-md-4 col-lg-4">
                         <div class="product-card">
                             <img src="{{ asset('img/productos/' . $producto['imagen']) }}" alt="{{ $producto['nombre'] }}">

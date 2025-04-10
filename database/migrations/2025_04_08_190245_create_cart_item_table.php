@@ -13,13 +13,17 @@ return new class extends Migration
 
     public function up()
     {
-        Schema::create('category', function (Blueprint $table) {
-            $table->id(); // => crea un unsignedBigInteger('id') automáticamente
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('category')) {
+            Schema::create('category', function (Blueprint $table) {
+                $table->id();
+                $table->string('name');
+                $table->text('description')->nullable();
+                $table->timestamps();
+            });
+        }
     }
+    
+
 
 
     /**
