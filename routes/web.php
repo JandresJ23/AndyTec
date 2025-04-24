@@ -16,3 +16,8 @@ Route::prefix('/Productos')->controller(ProductController::class)->group(functio
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome']);
