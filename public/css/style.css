@@ -1,0 +1,24 @@
+body {
+    background-color: #0f172a;
+    color: white;
+}
+.form-container {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 2px solid #38bdf8;
+}
+.form-label {
+    color: #38bdf8;
+    font-weight: bold;
+}
+.btn-submit {
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+}
+.btn-submit:hover {
+    background-color: #0ea5e9;
+}

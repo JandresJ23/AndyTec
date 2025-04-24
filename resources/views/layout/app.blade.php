@@ -5,32 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Producto - Andytec</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0f172a;
-            color: white;
-        }
-        .form-container {
-            background-color: #1e293b;
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 2rem auto;
-            border: 2px solid #38bdf8;
-        }
-        .form-label {
-            color: #38bdf8;
-            font-weight: bold;
-        }
-        .btn-submit {
-            background-color: #38bdf8;
-            color: #0f172a;
-            font-weight: bold;
-        }
-        .btn-submit:hover {
-            background-color: #0ea5e9;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
